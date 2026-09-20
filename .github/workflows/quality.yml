@@ -1,0 +1,33 @@
+name: SEZIONE v3 Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install QA dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Static repository QA
+        run: npm run qa:static
+
+      - name: Desktop + mobile browser QA
+        run: npm run qa:e2e
+
+      - name: Lighthouse budgets
+        run: npm run qa:lighthouse

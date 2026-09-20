@@ -1,0 +1,15 @@
+{
+  "name":"sezione-hair-studio-demo-v3",
+  "version":"1.0.0",
+  "private":true,
+  "scripts":{
+    "qa:static":"node scripts/static-qa.mjs",
+    "qa:e2e":"playwright test",
+    "qa:lighthouse":"lhci autorun"
+  },
+  "devDependencies":{
+    "@axe-core/playwright":"^4.10.2",
+    "@lhci/cli":"^0.14.0",
+    "@playwright/test":"^1.55.0"
+  }
+}

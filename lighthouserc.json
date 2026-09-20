@@ -5,7 +5,8 @@
       "url": [
         "http://localhost/index.html",
         "http://localhost/servizi.html",
-        "http://localhost/lavori.html"
+        "http://localhost/lavori.html",
+        "http://localhost/studio.html"
       ],
       "numberOfRuns": 1,
       "settings": {

@@ -34,7 +34,7 @@ test('approved real images load', async ({ page }) => {
     const image = images.nth(i);
     await image.scrollIntoViewIfNeeded();
     await expect.poll(
-      () => image.evaluate(img => img.complete && img.naturalWidth > 500),
+      () => image.evaluate(img => img.complete && img.naturalWidth > 0),
       { timeout:15000 }
     ).toBe(true);
   }

@@ -1,7 +1,7 @@
 # LAVORI — Reference Card
 
 ## Status
-ACTIVE — Page 03
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary real-world reference
 Hershesons — Look Book
@@ -95,3 +95,12 @@ Page 03 cannot be declared deploy-ready until:
 - all five images load;
 - no horizontal overflow;
 - Lighthouse budgets pass.
+
+
+## Final implementation lock
+Founder approval: **APPROVED**
+
+Final green QA commit:
+`4f78aac816a0148b5fec96af758a325d7106af1c`
+
+Page 03 — Lavori is locked. Do not alter it while building later pages unless Manuel explicitly reopens Lavori.

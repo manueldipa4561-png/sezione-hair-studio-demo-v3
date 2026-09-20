@@ -35,39 +35,34 @@ Secondary references: Hershesons / Josh Wood Colour Atelier
 Reference card:
 `docs/HOME-REFERENCE-CARD.md`
 
-Final green QA commit:
-`dc90b9633ee04c738797409601030a88cad10a1e`
-
-Validated:
-- Static QA: PASS
-- Desktop browser QA: PASS
-- Mobile browser QA: PASS
-- Accessibility: PASS
-- Lighthouse: PASS
-
-Photography:
-- licensed/free Unsplash implementation imagery;
-- source details documented in the Home Reference Card.
-
-## Current page
-**Page 02 — SERVICES**
-
-Status:
+### Page 02 — SERVICES
 **PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: Josh Wood Colour Atelier — Services & Price List  
-Secondary functional reference: George Northwood — consultation guidance
+Secondary reference: George Northwood — consultation guidance
 
 Reference card:
 `docs/SERVICES-REFERENCE-CARD.md`
 
+Final green QA commit:
+`c6585e0df90caffbe175f6ef5a83036be0608de8`
+
+### Page 03 — LAVORI
+**IMPLEMENTED — QA RUNNING**
+
+Primary reference: Hershesons — Look Book
+
+Reference card:
+`docs/LAVORI-REFERENCE-CARD.md`
+
 Implementation:
-- `servizi.html`
-- `servizi.css`
-- Home navigation updated to Page 02
+- `lavori.html`
+- `lavori.css`
+- 5 licensed/free Unsplash portraits
+- Home and Services navigation linked to Page 03
 
 Deployment status:
-**BLOCKED UNTIL THE PAGE 02 QUALITY GATE IS GREEN**
+**BLOCKED UNTIL PAGE 03 QUALITY GATE IS GREEN**
 
 ## Retired methods
 Do not recover into:
@@ -80,18 +75,3 @@ Do not recover into:
 
 Canonical workflow documentation:
 `docs/DEMO-GENERATION-SYSTEM-V3.md`
-
-
-## Current page
-**Page 03 — LAVORI**
-
-Status:
-**REFERENCE RESEARCH / NOT STARTED**
-
-Required first step:
-- choose one primary real high-end salon/editorial reference;
-- build the Lavori Reference Card;
-- source licensed/free photography;
-- implement the complete page;
-- fix all QA failures;
-- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**

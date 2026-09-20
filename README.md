@@ -53,7 +53,7 @@ Photography:
 **Page 02 — SERVICES**
 
 Status:
-**IMPLEMENTED — QA RUNNING**
+**PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: Josh Wood Colour Atelier — Services & Price List  
 Secondary functional reference: George Northwood — consultation guidance
@@ -80,3 +80,18 @@ Do not recover into:
 
 Canonical workflow documentation:
 `docs/DEMO-GENERATION-SYSTEM-V3.md`
+
+
+## Current page
+**Page 03 — LAVORI**
+
+Status:
+**REFERENCE RESEARCH / NOT STARTED**
+
+Required first step:
+- choose one primary real high-end salon/editorial reference;
+- build the Lavori Reference Card;
+- source licensed/free photography;
+- implement the complete page;
+- fix all QA failures;
+- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**

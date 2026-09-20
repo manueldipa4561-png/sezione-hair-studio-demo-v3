@@ -53,13 +53,21 @@ Photography:
 **Page 02 — SERVICES**
 
 Status:
-**NOT STARTED**
+**IMPLEMENTED — QA RUNNING**
 
-Before implementation:
-- select one primary real high-end reference;
-- build the Services Reference Card;
-- research actual service-selection friction;
-- then implement the complete page.
+Primary reference: Josh Wood Colour Atelier — Services & Price List  
+Secondary functional reference: George Northwood — consultation guidance
+
+Reference card:
+`docs/SERVICES-REFERENCE-CARD.md`
+
+Implementation:
+- `servizi.html`
+- `servizi.css`
+- Home navigation updated to Page 02
+
+Deployment status:
+**BLOCKED UNTIL THE PAGE 02 QUALITY GATE IS GREEN**
 
 ## Retired methods
 Do not recover into:

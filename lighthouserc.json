@@ -4,7 +4,8 @@
       "staticDistDir": ".",
       "url": [
         "http://localhost/index.html",
-        "http://localhost/servizi.html"
+        "http://localhost/servizi.html",
+        "http://localhost/lavori.html"
       ],
       "numberOfRuns": 1,
       "settings": {

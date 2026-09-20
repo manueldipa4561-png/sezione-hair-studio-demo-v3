@@ -78,12 +78,20 @@ Canonical workflow documentation:
 
 
 ### Page 04 — STUDIO
-**REFERENCE RESEARCH / NOT STARTED**
+**IMPLEMENTED — QA RUNNING**
 
-Required first step:
-- choose one primary real high-end salon studio/about reference;
-- document the Studio Reference Card;
-- source licensed/free interior/team imagery only if genuinely needed;
-- implement the complete Studio page;
-- fix all QA failures;
-- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**
+Primary reference: Hershesons — Stores / Fitzrovia
+
+Reference card:
+`docs/STUDIO-REFERENCE-CARD.md`
+
+Implementation:
+- `studio.html`
+- `studio.css`
+- 2 licensed/free Unsplash salon interiors
+- Home / Services / Lavori navigation linked to Page 04
+- no generated imagery
+- no invented address, hours, team or operating claims
+
+Deployment status:
+**BLOCKED UNTIL PAGE 04 QUALITY GATE IS GREEN**

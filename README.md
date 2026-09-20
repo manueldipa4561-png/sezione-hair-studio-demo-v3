@@ -48,7 +48,7 @@ Final green QA commit:
 `c6585e0df90caffbe175f6ef5a83036be0608de8`
 
 ### Page 03 — LAVORI
-**IMPLEMENTED — QA RUNNING**
+**PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: Hershesons — Look Book
 
@@ -61,8 +61,8 @@ Implementation:
 - 5 licensed/free Unsplash portraits
 - Home and Services navigation linked to Page 03
 
-Deployment status:
-**BLOCKED UNTIL PAGE 03 QUALITY GATE IS GREEN**
+Final green QA commit:
+`4f78aac816a0148b5fec96af758a325d7106af1c`
 
 ## Retired methods
 Do not recover into:
@@ -75,3 +75,15 @@ Do not recover into:
 
 Canonical workflow documentation:
 `docs/DEMO-GENERATION-SYSTEM-V3.md`
+
+
+### Page 04 — STUDIO
+**REFERENCE RESEARCH / NOT STARTED**
+
+Required first step:
+- choose one primary real high-end salon studio/about reference;
+- document the Studio Reference Card;
+- source licensed/free interior/team imagery only if genuinely needed;
+- implement the complete Studio page;
+- fix all QA failures;
+- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**

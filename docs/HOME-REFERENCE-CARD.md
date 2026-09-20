@@ -1,7 +1,7 @@
 # HOME — Reference Card
 
 ## Status
-ACTIVE — Page 01
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary visual reference
 George Northwood
@@ -88,3 +88,12 @@ Home cannot be marked ready for founder deployment until:
 - desktop + mobile browser QA passes;
 - axe serious/critical accessibility passes;
 - Lighthouse budgets pass.
+
+
+## Final implementation lock
+Founder approval: **APPROVED**
+
+Final green QA commit:
+`dc90b9633ee04c738797409601030a88cad10a1e`
+
+Home Page 01 is locked. Do not alter it while building later pages unless Manuel explicitly reopens the Home.

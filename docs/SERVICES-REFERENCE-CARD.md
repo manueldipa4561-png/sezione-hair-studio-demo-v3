@@ -1,7 +1,7 @@
 # SERVICES — Reference Card
 
 ## Status
-ACTIVE — Page 02
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary visual / structural reference
 Josh Wood Colour Atelier — Services & Price List
@@ -101,3 +101,12 @@ Page 02 cannot be declared deploy-ready until:
 - image loads;
 - no horizontal overflow;
 - Lighthouse budgets pass.
+
+
+## Final implementation lock
+Founder approval: **APPROVED**
+
+Final green QA commit:
+`c6585e0df90caffbe175f6ef5a83036be0608de8`
+
+Page 02 — Services is locked. Do not alter it while building later pages unless Manuel explicitly reopens Services.

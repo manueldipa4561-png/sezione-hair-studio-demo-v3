@@ -1,7 +1,7 @@
 # STUDIO — Reference Card
 
 ## Status
-ACTIVE — Page 04
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary real-world reference
 Hershesons — Stores / Fitzrovia
@@ -101,3 +101,15 @@ Page 04 cannot be declared deploy-ready until:
 - both images load;
 - no horizontal overflow;
 - Lighthouse budgets pass.
+
+
+## Final implementation lock
+Founder approval: **APPROVED**
+
+Final green QA commit:
+`222297bca1f0753af61171d46b644d101aac80bf`
+
+Final Quality Gate:
+`35528989956` — **SUCCESS**
+
+Page 04 — Studio is locked. Do not alter it while building later pages unless Manuel explicitly reopens Studio.

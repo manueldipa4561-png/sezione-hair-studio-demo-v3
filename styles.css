@@ -668,3 +668,10 @@ footer a:hover{
     animation-iteration-count:1 !important;
   }
 }
+
+
+/* INITIAL RENDER CONTAINMENT — preserve visuals, skip offscreen paint work */
+main > section:not(:first-child){
+  content-visibility:auto;
+  contain-intrinsic-size:auto 820px;
+}

@@ -1,7 +1,7 @@
 # CONTATTI / PRENOTAZIONE — Reference Card
 
 ## Status
-ACTIVE — Page 06
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary real-world reference
 George Northwood — Find Us / Wells St.
@@ -78,3 +78,13 @@ Page 06 cannot be declared deploy-ready until:
 - no personal-data collection;
 - no fabricated contact details;
 - Lighthouse budgets pass across all six pages.
+
+
+## Founder approval
+Manuel: **APPROVED**
+
+Final green QA before lock:
+- commit: `d0023e2745ae0f7f473bfa251f38236c7b02f9e0`
+- Quality Gate: `35572255439` — SUCCESS
+
+Page 06 is locked. Later changes are limited to the approved whole-site consistency / polish pass unless Manuel explicitly reopens the page.

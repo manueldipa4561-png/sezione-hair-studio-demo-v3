@@ -78,7 +78,7 @@ Canonical workflow documentation:
 
 
 ### Page 04 — STUDIO
-**IMPLEMENTED — QA RUNNING**
+**PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: Hershesons — Stores / Fitzrovia
 
@@ -93,5 +93,21 @@ Implementation:
 - no generated imagery
 - no invented address, hours, team or operating claims
 
-Deployment status:
-**BLOCKED UNTIL PAGE 04 QUALITY GATE IS GREEN**
+Final green QA commit:
+`222297bca1f0753af61171d46b644d101aac80bf`
+
+
+### Page 05 — PRIMA VISITA
+**REFERENCE RESEARCH / NOT STARTED**
+
+Purpose:
+- turn the existing “Prima volta” conversion route into a complete first-client page;
+- explain what to prepare, how consultation works conceptually, and what happens before service selection;
+- do not collect personal data or invent availability.
+
+Required first step:
+- choose one primary real premium salon new-client / consultation reference;
+- document the Reference Card;
+- implement the complete page;
+- fix all QA failures;
+- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**

@@ -129,9 +129,29 @@ if (studioCss.length > 48*1024) fail('Studio CSS exceeds 48 KB source budget');
 if (firstVisitCss.length > 48*1024) fail('Prima Visita CSS exceeds 48 KB source budget');
 if (contactCss.length > 48*1024) fail('Contatti CSS exceeds 48 KB source budget');
 
+const pageSet = [
+  ['Home',home,'HOME / 01'],
+  ['Services',services,'SERVIZI / 02'],
+  ['Lavori',works,'LAVORI / 03'],
+  ['Studio',studio,'STUDIO / 04'],
+  ['Prima Visita',firstVisit,'PRIMA VISITA / 05'],
+  ['Contatti',contact,'CONTATTI / 06']
+];
+
+for (const [label,html,footerLabel] of pageSet) {
+  if (!html.includes('href="contatti.html">PRENOTA</a>')) fail(label+' primary navigation must use PRENOTA → contatti.html');
+  if (!html.includes(footerLabel)) fail(label+' footer label is inconsistent');
+  if (!html.includes('DEMO / PUNTO DUE STUDIO')) fail(label+' footer attribution is inconsistent');
+}
+if (!home.includes('href="index.html" aria-label="SEZIONE — Home"')) fail('Home brand must use canonical index.html route');
+if (/REFERENCE-LED STUDIO DIRECTION/.test(home)) fail('Home exposes internal production language');
+if (!css.includes('FINAL SITE POLISH — shared interaction system')) fail('Shared final interaction polish missing');
+if (!css.includes(':focus-visible')) fail('Shared keyboard focus treatment missing');
+if (!css.includes('prefers-reduced-motion')) fail('Reduced-motion treatment missing');
+
 if (errors.length) {
-  console.error('Static QA failed:\n- '+errors.join('\n- '));
+  console.error('Final consistency QA failed:\n- '+errors.join('\n- '));
   process.exit(1);
 }
 
-console.log('Static QA PASS — Pages 01–06.');
+console.log('Static QA PASS — Pages 01–06 + final site consistency.');

@@ -596,3 +596,18 @@ footer{
     gap:8px;
   }
 }
+
+
+/* Global route handoff added when Page 06 became the primary booking destination. */
+.first-visit-link{
+  display:inline-flex;
+  margin-top:42px;
+  padding-bottom:5px;
+  border-bottom:1px solid currentColor;
+  font-size:9px;
+  letter-spacing:.08em;
+}
+
+@media (max-width:900px){
+  .first-visit-link{margin-top:34px;}
+}

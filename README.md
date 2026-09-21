@@ -98,16 +98,22 @@ Final green QA commit:
 
 
 ### Page 05 — PRIMA VISITA
-**REFERENCE RESEARCH / NOT STARTED**
+**IMPLEMENTED — QA RUNNING**
 
-Purpose:
-- turn the existing “Prima volta” conversion route into a complete first-client page;
-- explain what to prepare, how consultation works conceptually, and what happens before service selection;
-- do not collect personal data or invent availability.
+Primary reference: Josh Wood Colour — Consultation
 
-Required first step:
-- choose one primary real premium salon new-client / consultation reference;
-- document the Reference Card;
-- implement the complete page;
-- fix all QA failures;
-- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**
+Reference card:
+`docs/PRIMA-VISITA-REFERENCE-CARD.md`
+
+Implementation:
+- `prima-visita.html`
+- `prima-visita.css`
+- text-first / zero imagery
+- two-path first-client decision gateway
+- Home / Services / Lavori / Studio navigation linked to Page 05
+- no form
+- no personal-data collection
+- no invented availability, duration or consultation pricing
+
+Deployment status:
+**BLOCKED UNTIL PAGE 05 QUALITY GATE IS GREEN**

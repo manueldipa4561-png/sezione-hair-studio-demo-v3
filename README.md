@@ -141,7 +141,7 @@ Final green QA commit:
 
 
 ## Final whole-site polish
-**ACTIVE — QA REQUIRED BEFORE FINAL DEPLOY**
+**COMPLETE — FINAL QA GREEN**
 
 Scope:
 - preserve all six approved page architectures;
@@ -153,3 +153,24 @@ Scope:
 - validate all six pages as one connected site.
 
 No new page, no visual-system reset, no fabricated client data.
+
+
+### Final release candidate
+Final polished site green commit:
+`0a95f790adeb7b0a3de81e5feeb0dbd6d54bb3fe`
+
+Final Quality Gate:
+`35579626815` — **SUCCESS**
+
+Validated across all six pages:
+- static repository QA;
+- desktop browser QA;
+- mobile browser QA;
+- accessibility;
+- route / footer / navigation consistency;
+- no horizontal overflow;
+- no fabricated contact / personal-data collection;
+- Lighthouse performance, accessibility and best-practices budgets.
+
+Status:
+**READY FOR MANUEL TO DEPLOY.**

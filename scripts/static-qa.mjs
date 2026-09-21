@@ -139,7 +139,7 @@ const pageSet = [
 ];
 
 for (const [label,html,footerLabel] of pageSet) {
-  if (!html.includes('href="contatti.html">PRENOTA</a>')) fail(label+' primary navigation must use PRENOTA → contatti.html');
+  if (!/href="contatti\.html"(?: aria-current="page")?>PRENOTA<\/a>/.test(html)) fail(label+' primary navigation must use PRENOTA → contatti.html');
   if (!html.includes(footerLabel)) fail(label+' footer label is inconsistent');
   if (!html.includes('DEMO / PUNTO DUE STUDIO')) fail(label+' footer attribution is inconsistent');
 }

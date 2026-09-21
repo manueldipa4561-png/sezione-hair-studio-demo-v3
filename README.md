@@ -156,11 +156,10 @@ No new page, no visual-system reset, no fabricated client data.
 
 
 ### Final release candidate
-Final polished site green commit:
-`0a95f790adeb7b0a3de81e5feeb0dbd6d54bb3fe`
+Final polished site:
+**latest `main` after the final Quality Gate succeeds**
 
-Final Quality Gate:
-`35579626815` — **SUCCESS**
+The authoritative final commit and Quality Gate are recorded in Project Control after CI completes.
 
 Validated across all six pages:
 - static repository QA;

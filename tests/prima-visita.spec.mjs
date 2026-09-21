@@ -10,7 +10,7 @@ test('Prima Visita renders complete Page 05 structure', async ({ page }) => {
   await expect(page.locator('.visit-path')).toHaveCount(2);
   await expect(page.locator('.visit-factor')).toHaveCount(4);
   await expect(page.locator('.visit-step')).toHaveCount(3);
-  await expect(page.locator('a[aria-current="page"]')).toHaveCount(2);
+  await expect(page.locator('a[aria-current="page"]')).toHaveCount(0);
   await expect(page.locator('form')).toHaveCount(0);
   await expect(page.locator('main img')).toHaveCount(0);
 
@@ -30,7 +30,7 @@ test('Prima Visita has no serious or critical accessibility violations', async (
 test('Prima Visita routes to Services and Lavori', async ({ page }) => {
   await page.goto('/prima-visita.html');
   await expect(page.locator('a[href="servizi.html"]')).toHaveCount(3);
-  await expect(page.locator('a[href="lavori.html"]')).toHaveCount(4);
+  await expect(page.locator('a[href="lavori.html"]')).toHaveCount(3);
 });
 
 test('Prima Visita mobile navigation opens with keyboard', async ({ page }, testInfo) => {

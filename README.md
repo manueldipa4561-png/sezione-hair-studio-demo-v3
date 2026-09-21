@@ -120,7 +120,7 @@ Final green QA commit:
 
 
 ### Page 06 — CONTATTI / PRENOTAZIONE
-**IMPLEMENTED — QA RUNNING**
+**PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: George Northwood — Find Us / Wells St.
 
@@ -136,5 +136,20 @@ Implementation:
 - global nav now uses PRENOTA as the primary conversion destination
 - Prima Visita remains available as an internal guidance route
 
-Deployment status:
-**BLOCKED UNTIL PAGE 06 QUALITY GATE IS GREEN**
+Final green QA commit:
+`d0023e2745ae0f7f473bfa251f38236c7b02f9e0`
+
+
+## Final whole-site polish
+**ACTIVE — QA REQUIRED BEFORE FINAL DEPLOY**
+
+Scope:
+- preserve all six approved page architectures;
+- normalize Home brand routing;
+- normalize footer language and numbering;
+- remove visible internal production terminology;
+- normalize focus / hover / current-page states;
+- preserve reduced-motion accessibility;
+- validate all six pages as one connected site.
+
+No new page, no visual-system reset, no fabricated client data.

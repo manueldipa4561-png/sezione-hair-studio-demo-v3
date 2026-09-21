@@ -611,3 +611,60 @@ footer{
 @media (max-width:900px){
   .first-visit-link{margin-top:34px;}
 }
+
+
+/* FINAL SITE POLISH — shared interaction system */
+a, summary{
+  -webkit-tap-highlight-color:transparent;
+}
+a{
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+.site-header a,
+.mobile-nav summary,
+.cta-button,
+.first-visit-link{
+  transition:opacity 160ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+.site-header a:hover,
+.mobile-nav summary:hover,
+.first-visit-link:hover{
+  opacity:.62;
+}
+.desktop-nav a[aria-current="page"],
+.mobile-nav a[aria-current="page"]{
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+a:focus-visible,
+summary:focus-visible{
+  outline:2px solid currentColor;
+  outline-offset:5px;
+  border-radius:1px;
+}
+.cta-button:hover{
+  background:var(--white);
+  color:var(--ink);
+}
+.site-header{
+  isolation:isolate;
+}
+.mobile-nav summary{
+  cursor:pointer;
+}
+.mobile-nav[open] summary{
+  opacity:.62;
+}
+footer a:hover{
+  opacity:.62;
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto !important;
+    transition-duration:.01ms !important;
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+  }
+}

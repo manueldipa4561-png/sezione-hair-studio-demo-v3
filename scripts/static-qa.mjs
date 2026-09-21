@@ -5,18 +5,21 @@ const services = fs.readFileSync('servizi.html','utf8');
 const works = fs.readFileSync('lavori.html','utf8');
 const studio = fs.readFileSync('studio.html','utf8');
 const firstVisit = fs.readFileSync('prima-visita.html','utf8');
+const contact = fs.readFileSync('contatti.html','utf8');
 
 const css = fs.readFileSync('styles.css','utf8');
 const servicesCss = fs.readFileSync('servizi.css','utf8');
 const worksCss = fs.readFileSync('lavori.css','utf8');
 const studioCss = fs.readFileSync('studio.css','utf8');
 const firstVisitCss = fs.readFileSync('prima-visita.css','utf8');
+const contactCss = fs.readFileSync('contatti.css','utf8');
 
 const homeReference = fs.readFileSync('docs/HOME-REFERENCE-CARD.md','utf8');
 const servicesReference = fs.readFileSync('docs/SERVICES-REFERENCE-CARD.md','utf8');
 const worksReference = fs.readFileSync('docs/LAVORI-REFERENCE-CARD.md','utf8');
 const studioReference = fs.readFileSync('docs/STUDIO-REFERENCE-CARD.md','utf8');
 const firstVisitReference = fs.readFileSync('docs/PRIMA-VISITA-REFERENCE-CARD.md','utf8');
+const contactReference = fs.readFileSync('docs/CONTATTI-REFERENCE-CARD.md','utf8');
 
 const errors = [];
 const fail = msg => errors.push(msg);
@@ -37,6 +40,7 @@ checkCommon(services,'Services');
 checkCommon(works,'Lavori');
 checkCommon(studio,'Studio');
 checkCommon(firstVisit,'Prima Visita');
+checkCommon(contact,'Contatti');
 
 if ((home.match(/<section\b/g) || []).length !== 7) fail('Home must contain exactly seven sections');
 if ((home.match(/<img\b/g) || []).length !== 2) fail('Home must contain exactly two approved image assets');
@@ -82,7 +86,8 @@ if ((firstVisit.match(/<img\b/g) || []).length !== 0) fail('Prima Visita should 
 if ((firstVisit.match(/class="visit-path(?:\s|")/g) || []).length !== 2) fail('Prima Visita must contain two starting pathways');
 if ((firstVisit.match(/class="visit-factor"/g) || []).length !== 4) fail('Prima Visita must contain four decision factors');
 if ((firstVisit.match(/class="visit-step"/g) || []).length !== 3) fail('Prima Visita must contain three decision steps');
-if ((firstVisit.match(/aria-current="page"/g) || []).length !== 2) fail('Prima Visita navigation must expose current page on desktop and mobile');
+if ((firstVisit.match(/aria-current="page"/g) || []).length !== 0) fail('Prima Visita should no longer be the primary navigation destination');
+if (!/href="contatti\\.html"/.test(firstVisit)) fail('Prima Visita must link to Contatti page');
 if (!/Josh Wood Colour — Consultation/.test(firstVisitReference)) fail('Prima Visita missing primary real-world reference');
 if (!/No imagery is used on Page 05/.test(firstVisitReference)) fail('Prima Visita image-plan rationale missing');
 
@@ -96,8 +101,9 @@ if (!servicesCss.includes('.service-hero') || !servicesCss.includes('@media (max
 if (!worksCss.includes('.lookbook') || !worksCss.includes('@media (max-width:900px)')) fail('Lavori responsive stylesheet incomplete');
 if (!studioCss.includes('.studio-hero') || !studioCss.includes('@media (max-width:900px)')) fail('Studio responsive stylesheet incomplete');
 if (!firstVisitCss.includes('.visit-pathways') || !firstVisitCss.includes('@media (max-width:900px)')) fail('Prima Visita responsive stylesheet incomplete');
+if (!contactCss.includes('.contact-routes') || !contactCss.includes('@media (max-width:900px)')) fail('Contatti responsive stylesheet incomplete');
 
-for (const html of [home, services, works, studio, firstVisit]) {
+for (const html of [home, services, works, studio, firstVisit, contact]) {
   for (const img of html.matchAll(/<img\b[^>]*>/g)) {
     if (!/\balt="[^"]+"/.test(img[0])) fail('image missing meaningful alt text');
     if (!/\bwidth="\d+"/.test(img[0]) || !/\bheight="\d+"/.test(img[0])) fail('image missing intrinsic dimensions');
@@ -109,10 +115,20 @@ if (servicesCss.length > 48 * 1024) fail('Services CSS exceeds 48 KB source budg
 if (worksCss.length > 48 * 1024) fail('Lavori CSS exceeds 48 KB source budget');
 if (studioCss.length > 48 * 1024) fail('Studio CSS exceeds 48 KB source budget');
 if (firstVisitCss.length > 48 * 1024) fail('Prima Visita CSS exceeds 48 KB source budget');
+if (contactCss.length > 48 * 1024) fail('Contatti CSS exceeds 48 KB source budget');
 
 if (errors.length) {
   console.error('Static QA failed:\n- '+errors.join('\n- '));
   process.exit(1);
 }
 
-console.log('Static QA PASS — Home 01 + Services 02 + Lavori 03 + Studio 04 + Prima Visita 05.');
+if ((contact.match(/<section\\b/g) || []).length !== 5) fail('Contatti must contain exactly five sections');
+if ((contact.match(/<img\\b/g) || []).length !== 0) fail('Contatti should remain text-first with zero images');
+if ((contact.match(/class="contact-route(?:\\s|")/g) || []).length !== 2) fail('Contatti must contain two booking routes');
+if ((contact.match(/class="contact-slot-list"/g) || []).length !== 1) fail('Contatti must contain verified-data slots');
+if ((contact.match(/aria-current="page"/g) || []).length !== 2) fail('Contatti navigation must expose current page on desktop and mobile');
+if (/mailto:|tel:/i.test(contact)) fail('Contatti must not fabricate direct contact links');
+if (!/George Northwood — Find Us \/ Wells St\./.test(contactReference)) fail('Contatti missing primary real-world reference');
+if (!/No form is implemented/.test(contactReference)) fail('Contatti personal-data rule missing');
+
+console.log('Static QA PASS — Home 01 + Services 02 + Lavori 03 + Studio 04 + Prima Visita 05 + Contatti 06.');

@@ -120,16 +120,21 @@ Final green QA commit:
 
 
 ### Page 06 — CONTATTI / PRENOTAZIONE
-**REFERENCE RESEARCH / NOT STARTED**
+**IMPLEMENTED — QA RUNNING**
 
-Purpose:
-- create the final conversion page without inventing address, hours, availability or booking software;
-- give a clear route for contact / booking intent;
-- preserve the demo's no-personal-data rule unless a real client system is connected later.
+Primary reference: George Northwood — Find Us / Wells St.
 
-Required first step:
-- choose one primary real premium salon contact / booking reference;
-- document the Reference Card;
-- implement the complete page;
-- fix all QA failures;
-- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**
+Reference card:
+`docs/CONTATTI-REFERENCE-CARD.md`
+
+Implementation:
+- `contatti.html`
+- `contatti.css`
+- zero imagery
+- zero forms
+- zero fabricated contact details
+- global nav now uses PRENOTA as the primary conversion destination
+- Prima Visita remains available as an internal guidance route
+
+Deployment status:
+**BLOCKED UNTIL PAGE 06 QUALITY GATE IS GREEN**

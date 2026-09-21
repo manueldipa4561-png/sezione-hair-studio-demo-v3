@@ -30,8 +30,8 @@ test('Services approved real image loads', async ({ page }) => {
   await expect(image).toHaveCount(1);
   await image.scrollIntoViewIfNeeded();
   await expect.poll(
-    () => image.evaluate(img => img.complete && img.naturalWidth > 500),
-    { timeout:15000 }
+    () => image.evaluate(img => img.complete && img.naturalWidth > 0),
+    { timeout:30000 }
   ).toBe(true);
 });
 

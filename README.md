@@ -98,7 +98,7 @@ Final green QA commit:
 
 
 ### Page 05 — PRIMA VISITA
-**IMPLEMENTED — QA RUNNING**
+**PAGE LOCKED — APPROVED BY MANUEL**
 
 Primary reference: Josh Wood Colour — Consultation
 
@@ -115,5 +115,21 @@ Implementation:
 - no personal-data collection
 - no invented availability, duration or consultation pricing
 
-Deployment status:
-**BLOCKED UNTIL PAGE 05 QUALITY GATE IS GREEN**
+Final green QA commit:
+`4773d65392d784841d780030a9f09fffa8ffb600`
+
+
+### Page 06 — CONTATTI / PRENOTAZIONE
+**REFERENCE RESEARCH / NOT STARTED**
+
+Purpose:
+- create the final conversion page without inventing address, hours, availability or booking software;
+- give a clear route for contact / booking intent;
+- preserve the demo's no-personal-data rule unless a real client system is connected later.
+
+Required first step:
+- choose one primary real premium salon contact / booking reference;
+- document the Reference Card;
+- implement the complete page;
+- fix all QA failures;
+- only then tell Manuel: **YOU CAN DEPLOY THIS PAGE NOW.**

@@ -1,7 +1,7 @@
 # PRIMA VISITA — Reference Card
 
 ## Status
-ACTIVE — Page 05
+PAGE LOCKED — APPROVED BY MANUEL
 
 ## Primary real-world reference
 Josh Wood Colour — Consultation
@@ -83,3 +83,15 @@ Page 05 cannot be declared deploy-ready until:
 - no horizontal overflow;
 - no personal-data collection;
 - Lighthouse budgets pass across all five pages.
+
+
+## Final implementation lock
+Founder approval: **APPROVED**
+
+Final green QA commit:
+`4773d65392d784841d780030a9f09fffa8ffb600`
+
+Final Quality Gate:
+`35547470369` — **SUCCESS**
+
+Page 05 — Prima Visita is locked. Do not alter it while building later pages unless Manuel explicitly reopens it.

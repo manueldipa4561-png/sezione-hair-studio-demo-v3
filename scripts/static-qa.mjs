@@ -70,7 +70,7 @@ if (!works.includes('href="contatti.html">PRENOTA</a>')) fail('Lavori primary na
 if (!works.includes('href="prima-visita.html"')) fail('Lavori must preserve Prima Visita guidance route');
 if (!/RIFERIMENTI\.<br><em>NON COPIE/.test(works)) fail('Lavori must preserve reference-not-copy framing');
 if (!/Hershesons — Look Book/.test(worksReference)) fail('Lavori missing primary reference');
-if (!/Unsplash License/.test(worksReference)) fail('Lavori image licensing note missing');
+if (!/custom AI-generated concept imagery/.test(worksReference)) fail('Lavori generated-imagery integrity note missing');
 
 // Studio
 if ((studio.match(/<section\b/g) || []).length !== 5) fail('Studio must contain exactly five sections');
@@ -80,8 +80,7 @@ if (!studio.includes('href="contatti.html">PRENOTA</a>')) fail('Studio primary n
 if (!studio.includes('href="prima-visita.html"')) fail('Studio must preserve Prima Visita guidance route');
 if (!/LO SPAZIO<br><em>FA PARTE/.test(studio)) fail('Studio must preserve spatial-service framing');
 if (!/Hershesons — Stores \/ Fitzrovia/.test(studioReference)) fail('Studio missing primary reference');
-if (!/Tile Merchant Ireland/.test(studioReference)) fail('Studio missing hero image source');
-if (!/Unsplash License/.test(studioReference)) fail('Studio image licensing note missing');
+if (!/custom AI-generated concept imagery/.test(studioReference)) fail('Studio generated-imagery integrity note missing');
 
 // Prima Visita
 if ((firstVisit.match(/<section\b/g) || []).length !== 6) fail('Prima Visita must contain exactly six sections');
@@ -104,8 +103,15 @@ if (/mailto:|tel:/i.test(contact)) fail('Contatti must not fabricate direct cont
 if (!/George Northwood — Find Us \/ Wells St\./.test(contactReference)) fail('Contatti missing primary reference');
 if (!/No form is implemented/.test(contactReference)) fail('Contatti personal-data rule missing');
 
+// Image-system integrity
+for (const [label,html] of [['Home',home],['Services',services],['Lavori',works],['Studio',studio]]) {
+  if (/images\.unsplash\.com/.test(html)) fail(label+' still contains old Unsplash implementation imagery');
+  if (!/d2ol7oe51mr4n9\.cloudfront\.net/.test(html)) fail(label+' missing final generated-image CDN asset');
+}
+
 // Shared design / responsive budgets
-if (!/Unsplash/.test(homeReference)) fail('Home image licensing reference missing');
+if (!/custom AI-generated concept imagery/.test(homeReference)) fail('Home generated-imagery integrity note missing');
+if (!/custom AI-generated concept imagery/.test(servicesReference)) fail('Services generated-imagery integrity note missing');
 for (const token of ['#F5F3EE','#FFFFFF','#0B0B0A','#CFC9BE','#D9DAD5']) {
   if (!css.includes(token)) fail('missing approved palette token '+token);
 }

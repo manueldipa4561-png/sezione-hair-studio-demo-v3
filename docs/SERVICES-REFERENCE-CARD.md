@@ -68,14 +68,16 @@ A new visitor needs to answer:
 8. Four decision factors
 9. Final CTA / return Home
 
-## Photography
-Implementation reuses an already documented free-to-use Unsplash image from the locked Home:
-https://images.unsplash.com/photo-1723879371709-17908244d70a
+## Implementation imagery
+All live visual assets on this page are **custom AI-generated concept imagery created specifically for this SEZIONE demo**.
 
-Source page and licensing details are documented in:
-`docs/HOME-REFERENCE-CARD.md`
+They are used to strengthen the premium editorial direction established by the real-world references while avoiding third-party salon photography in the implementation.
 
-No new generated imagery is used for Services.
+Integrity rule:
+- the people shown are not claimed SEZIONE clients;
+- the salons/interiors shown are not claimed to be a real SEZIONE location;
+- the visuals do not represent verified before/after outcomes;
+- no testimonial, staff identity, location or operating claim is inferred from the images.
 
 ## Content integrity
 This is a concept demo.

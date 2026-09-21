@@ -58,7 +58,7 @@ Reference card:
 Implementation:
 - `lavori.html`
 - `lavori.css`
-- 5 licensed/free Unsplash portraits
+- 5 custom generated monochrome editorial portraits
 - Home and Services navigation linked to Page 03
 
 Final green QA commit:
@@ -88,9 +88,9 @@ Reference card:
 Implementation:
 - `studio.html`
 - `studio.css`
-- 2 licensed/free Unsplash salon interiors
+- 2 custom generated monochrome salon interiors
 - Home / Services / Lavori navigation linked to Page 04
-- no generated imagery
+- generated imagery is concept-only and not presented as a real location
 - no invented address, hours, team or operating claims
 
 Final green QA commit:
@@ -173,3 +173,14 @@ Validated across all six pages:
 
 Status:
 **READY FOR MANUEL TO DEPLOY.**
+
+
+### Final image system
+All previous stock/Unsplash implementation imagery on Home, Services, Lavori and Studio has been replaced by a cohesive custom monochrome editorial image system.
+
+Rules:
+- custom generated concept imagery only;
+- no generated person is presented as a real client;
+- no generated interior is presented as a real SEZIONE location;
+- web-optimized WebP delivery;
+- the approved page structures and typography remain unchanged.

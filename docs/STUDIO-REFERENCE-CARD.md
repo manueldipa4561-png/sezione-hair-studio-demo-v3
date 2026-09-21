@@ -47,30 +47,16 @@ The page communicates four spatial principles:
 
 These are **concept design principles**, not verified claims about an operating SEZIONE location.
 
-## Implementation photography
+## Implementation imagery
+All live visual assets on this page are **custom AI-generated concept imagery created specifically for this SEZIONE demo**.
 
-### Hero interior
-Source: Unsplash
-Photographer: Tile Merchant Ireland (@tilemerchant)
-Photo page:
-https://unsplash.com/photos/a-hair-salon-with-chairs-and-mirrors-2dliPhBcEkg
-Implementation URL:
-https://images.unsplash.com/photo-1706629503634-2de20b65080e
+They are used to strengthen the premium editorial direction established by the real-world references while avoiding third-party salon photography in the implementation.
 
-The source page identifies the image as free to use under the Unsplash License.
-
-### Secondary interior
-Source: Unsplash
-Photographer: Barney Goodman
-Photo page:
-https://unsplash.com/photos/a-modern-hair-salon-interior-with-stylish-chairs-and-mirrors-_Fy7Kq0w6OI
-Implementation URL:
-https://images.unsplash.com/photo-1781450090585-1a511b7066d9
-
-This image is already documented in:
-`docs/HOME-REFERENCE-CARD.md`
-
-No generated imagery is used for Page 04.
+Integrity rule:
+- the people shown are not claimed SEZIONE clients;
+- the salons/interiors shown are not claimed to be a real SEZIONE location;
+- the visuals do not represent verified before/after outcomes;
+- no testimonial, staff identity, location or operating claim is inferred from the images.
 
 ## Content integrity
 This is a concept demo.

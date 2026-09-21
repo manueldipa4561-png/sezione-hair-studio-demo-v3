@@ -42,25 +42,16 @@ Used only for:
 
 The palette follows the restrained monochrome / natural-material logic of high-end salon references without copying a specific brand system.
 
-## Photography
+## Implementation imagery
+All live visual assets on this page are **custom AI-generated concept imagery created specifically for this SEZIONE demo**.
 
-### Hero
-Source: Unsplash
-Photographer: Aditya Sethia
-Page:
-https://unsplash.com/photos/a-woman-getting-her-hair-cut-at-a-salon-jWaK7wl0b1s
-Implementation URL:
-https://images.unsplash.com/photo-1723879371709-17908244d70a
+They are used to strengthen the premium editorial direction established by the real-world references while avoiding third-party salon photography in the implementation.
 
-### Interior
-Source: Unsplash
-Photographer: Barney Goodman
-Page:
-https://unsplash.com/photos/a-modern-hair-salon-interior-with-stylish-chairs-and-mirrors-_Fy7Kq0w6OI
-Implementation URL:
-https://images.unsplash.com/photo-1781450090585-1a511b7066d9
-
-Both source pages identify the images as free to use under the Unsplash License.
+Integrity rule:
+- the people shown are not claimed SEZIONE clients;
+- the salons/interiors shown are not claimed to be a real SEZIONE location;
+- the visuals do not represent verified before/after outcomes;
+- no testimonial, staff identity, location or operating claim is inferred from the images.
 
 ## Content integrity
 This is a concept demo.

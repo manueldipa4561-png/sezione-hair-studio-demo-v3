@@ -45,28 +45,16 @@ The page adds a restrained opening statement and a short decision-principles sec
 Core line:
 “RIFERIMENTI. NON COPIE.”
 
-## Implementation photography
-All five implementation images are non-Unsplash+ photos identified as free to use under the Unsplash License.
+## Implementation imagery
+All live visual assets on this page are **custom AI-generated concept imagery created specifically for this SEZIONE demo**.
 
-1. Alex Sheldon
-   - https://unsplash.com/photos/grayscale-photography-of-woman-with-eyes-closed-Zg14Kx1XVsc
-   - https://images.unsplash.com/photo-1495914510314-ba3164b1321f
+They are used to strengthen the premium editorial direction established by the real-world references while avoiding third-party salon photography in the implementation.
 
-2. See Plus
-   - https://unsplash.com/photos/a-woman-with-a-ponytail-is-posing-for-a-picture-k8AWNNCry-0
-   - https://images.unsplash.com/photo-1643932919088-53349a7c3385
-
-3. Roksolana Zasiadko
-   - https://unsplash.com/photos/woman-blonde-hair-and-red-lipstick-LyeduBb2Auk
-   - https://images.unsplash.com/photo-1440589473619-3cde28941638
-
-4. Oleg Ivanov
-   - https://unsplash.com/photos/topless-woman-on-bath-tub-wBCfYSaSHZ4
-   - https://images.unsplash.com/photo-1548550702-9c59121819b7
-
-5. Olena Bohovyk
-   - https://unsplash.com/photos/woman-wearing-red-long-sleeved-shirt-beside-wall-XttWKETqCCQ
-   - https://images.unsplash.com/photo-1557053910-d9eadeed1c58
+Integrity rule:
+- the people shown are not claimed SEZIONE clients;
+- the salons/interiors shown are not claimed to be a real SEZIONE location;
+- the visuals do not represent verified before/after outcomes;
+- no testimonial, staff identity, location or operating claim is inferred from the images.
 
 ## Content integrity
 This is a concept lookbook.

@@ -7,7 +7,8 @@
         "http://localhost/servizi.html",
         "http://localhost/lavori.html",
         "http://localhost/studio.html",
-        "http://localhost/prima-visita.html"
+        "http://localhost/prima-visita.html",
+        "http://localhost/contatti.html"
       ],
       "numberOfRuns": 1,
       "settings": {
